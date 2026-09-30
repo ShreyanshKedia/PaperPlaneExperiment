@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #000;
+    color: white;
+    overflow: hidden;
+}
+
+
+/* =========================
+   BACKGROUND VIDEO
+   ========================= */
+
+.background-video {
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    z-index: -2;
+}
+
+
+/* =========================
+   DARK OVERLAY
+   ========================= */
+
+.overlay {
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0, 0, 0, 0.45);
+
+    z-index: -1;
+}
+
+
+/* =========================
+   CONTENT
+   ========================= */
+
+.content {
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    padding: 30px;
+}
+
+
+/* Small heading */
+
+.eyebrow {
+    font-size: 14px;
+    letter-spacing: 5px;
+
+    margin-bottom: 20px;
+
+    opacity: 0.8;
+}
+
+
+/* Main heading */
+
+h1 {
+    font-size: clamp(50px, 9vw, 130px);
+
+    line-height: 0.9;
+
+    font-weight: 800;
+
+    letter-spacing: -4px;
+}
+
+h1 span {
+    font-weight: 300;
+}
+
+
+/* Description */
+
+.description {
+    max-width: 600px;
+
+    margin-top: 30px;
+
+    font-size: 18px;
+
+    line-height: 1.6;
+
+    opacity: 0.9;
+}
+
+
+/* Button */
+
+.button {
+    display: inline-block;
+
+    margin-top: 35px;
+
+    padding: 15px 30px;
+
+    border: 1px solid white;
+
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 13px;
+
+    letter-spacing: 3px;
+
+    transition: 0.3s;
+}
+
+.button:hover {
+    background: white;
+    color: black;
+}
