@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="How does the wing area and type of a paper plane affect how far it flies? Results, method and launcher design.">
 
     <title>Paper Plane Experiment</title>
 
@@ -20,8 +21,8 @@
     <!-- Dark overlay -->
     <div class="overlay"></div>
 
-    <!-- Main content -->
-    <main class="content">
+    <!-- Main content (hero) -->
+    <main class="content" id="top">
 
         <p class="eyebrow">PHYSICS EXPERIMENT</p>
 
@@ -35,11 +36,327 @@
             its flight distance, stability, and speed?
         </p>
 
-        <a href="#experiment" class="button">
-            EXPLORE
-        </a>
+        <div class="actions">
+            <a href="#experiment" class="button">
+                EXPLORE
+            </a>
+            <a href="#videos" class="button">
+                WATCH VIDEOS
+            </a>
+        </div>
 
     </main>
+
+
+    <!-- =========================
+         EXPERIMENT PAGE CONTENT
+         ========================= -->
+    <div class="page">
+
+        <!-- AIM -->
+        <section class="section" id="experiment">
+            <h2>Aim and variables</h2>
+
+            <p>
+                This experiment has a lot of possible variables: wind, the height of the launcher,
+                the force of the launcher, the angle of the launcher, the type of aircraft launched,
+                the wingspan, the wing area and even the mass of the plane. Only a select few were
+                chosen.
+            </p>
+
+            <p>
+                The aim is to understand how the <strong>wing area</strong> (in cm²) of a paper plane
+                and its <strong>type</strong> (glider or dart) relate to the
+                <strong>distance</strong> it flies (in metres) in a controlled environment, with the
+                effect of every other variable removed.
+            </p>
+        </section>
+
+
+        <!-- RESULTS -->
+        <section class="section" id="results">
+            <h2>Results</h2>
+
+            <p>
+                Four planes were launched five times each. Distances are in metres.
+            </p>
+
+            <div class="table-wrap">
+                <table>
+                    <caption class="visually-hidden">Distance flown by each paper plane over five trials</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Airplane name</th>
+                            <th scope="col">Type</th>
+                            <th scope="col">Trial 1</th>
+                            <th scope="col">Trial 2</th>
+                            <th scope="col">Trial 3</th>
+                            <th scope="col">Trial 4</th>
+                            <th scope="col">Trial 5</th>
+                            <th scope="col">Average</th>
+                            <th scope="col">Wing area</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Suzanne</th>
+                            <td>Glider</td>
+                            <td>5.48 m</td>
+                            <td>4.89 m</td>
+                            <td>5.52 m</td>
+                            <td>5.37 m</td>
+                            <td>5.23 m</td>
+                            <td class="avg">5.30 m</td>
+                            <td>147 cm²</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Classic Dart</th>
+                            <td>Dart</td>
+                            <td>4.16 m</td>
+                            <td>4.42 m</td>
+                            <td>4.6 m</td>
+                            <td>4.9 m</td>
+                            <td>4.34 m</td>
+                            <td class="avg">4.48 m</td>
+                            <td>168.5 cm²</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Arrowhead</th>
+                            <td>Dart</td>
+                            <td>3.35 m</td>
+                            <td>3.27 m</td>
+                            <td>2.48 m</td>
+                            <td>3.75 m</td>
+                            <td>3.61 m</td>
+                            <td class="avg">3.29 m</td>
+                            <td>114.1 cm²</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Mighty Eagle</th>
+                            <td>Glider</td>
+                            <td>6.85 m</td>
+                            <td>6.48 m</td>
+                            <td>6.62 m</td>
+                            <td>6.35 m</td>
+                            <td>7.95 m</td>
+                            <td class="avg">6.85 m</td>
+                            <td>210 cm²</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h3>Average distance</h3>
+
+            <div class="legend">
+                <span><i class="swatch glider"></i> Glider</span>
+                <span><i class="swatch dart"></i> Dart</span>
+            </div>
+
+            <div class="bars" role="list">
+                <div class="bar" role="listitem">
+                    <span class="bar-name">Mighty Eagle</span>
+                    <span class="bar-track"><span class="bar-fill glider" style="--v: 6.85"></span></span>
+                    <span class="bar-val">6.85 m</span>
+                </div>
+                <div class="bar" role="listitem">
+                    <span class="bar-name">Suzanne</span>
+                    <span class="bar-track"><span class="bar-fill glider" style="--v: 5.30"></span></span>
+                    <span class="bar-val">5.30 m</span>
+                </div>
+                <div class="bar" role="listitem">
+                    <span class="bar-name">Classic Dart</span>
+                    <span class="bar-track"><span class="bar-fill dart" style="--v: 4.48"></span></span>
+                    <span class="bar-val">4.48 m</span>
+                </div>
+                <div class="bar" role="listitem">
+                    <span class="bar-name">Arrowhead</span>
+                    <span class="bar-track"><span class="bar-fill dart" style="--v: 3.29"></span></span>
+                    <span class="bar-val">3.29 m</span>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- METHOD -->
+        <section class="section" id="method">
+            <h2>Method</h2>
+
+            <p>
+                All aircraft were launched by an aircraft launcher set at an angle of 15° and
+                using the same elastic force. The launcher was kept 50 cm above the ground.
+            </p>
+
+            <p>
+                The paper planes were launched indoors to remove the effect of changing wind speed
+                and direction, another variable associated with this experiment.
+            </p>
+        </section>
+
+
+        <!-- FINDINGS -->
+        <section class="section" id="findings">
+            <h2>What the results show</h2>
+
+            <p>
+                This experiment shows that, with these prerequisites and conditions, gliders tend to
+                be more effective in terms of pure distance. “Mighty Eagle”, a glider that
+                prioritises pure wing area, performed the best, reaching around 6.85 metres on
+                average.
+            </p>
+
+            <p>
+                This is in sharp contrast to the worst performer, “Arrowhead”. Being a front-heavy,
+                dart-style paper aircraft, it needs a very high initial speed for its wings to
+                generate enough lift to support the 5 grams the plane weighs, especially as its wing
+                area is only 114.1 cm².
+            </p>
+
+            <p>
+                The Classic Dart, while not achieving the greatest performance, did quite well for a
+                dart-type aircraft, owing to its large wing area and less weight at the nose. This
+                highlights the difference again: if we hold the aircraft type constant and compare
+                the Classic Dart with the Arrowhead, we can show that nose weight and wing area are
+                two factors that decide the aerodynamic efficiency of a dart-style paper plane.
+            </p>
+        </section>
+
+
+        <!-- LAUNCHER DESIGN -->
+        <section class="section" id="launcher">
+            <h2>Designing the launcher</h2>
+
+            <p>
+                Interestingly, the hardest part of the experiment for me was designing the paper
+                plane launcher. I failed twice before perfecting the design, learning something new
+                each time. The final iteration (V3) featured many improvements over the first two.
+            </p>
+
+            <figure class="gallery-row">
+                <div class="gallery">
+                    <a href="images/launcher-v1.jpg" target="_blank" rel="noopener">
+                        <img src="images/launcher-v1.jpg"
+                             alt="Version 1 of the launcher: a folded paper M shape on a table"
+                             loading="lazy">
+                    </a>
+                    <a href="images/launcher-v2.jpg" target="_blank" rel="noopener">
+                        <img src="images/launcher-v2.jpg"
+                             alt="Version 2 of the launcher: a double layer cardboard M shape with an orange rubber band"
+                             loading="lazy">
+                    </a>
+                    <a href="images/launcher-v3.jpg" target="_blank" rel="noopener">
+                        <img src="images/launcher-v3.jpg"
+                             alt="Version 3 of the launcher: two parallel cardboard guide rails on a cardboard base"
+                             loading="lazy">
+                    </a>
+                </div>
+                <figcaption>
+                    <p><strong>Left (V1).</strong> Taken from a YouTube tutorial. Flimsy, made of paper and didn’t work.</p>
+                    <p><strong>Middle (V2).</strong> Same design as the first, made of a double layer of cardboard. It worked but was wildly inconsistent, practically the same.</p>
+                    <p><strong>Right (V3).</strong> Designed completely by me. It used a guiding rail system alongside a separate cardboard pusher to increase accuracy.</p>
+                </figcaption>
+            </figure>
+
+            <h3>What changed in Version 3</h3>
+
+            <p>
+                <strong>A full locking feature.</strong> I could let go of the rubber band and the
+                energy would remain stored. This allowed me to load the aircraft with one arm and
+                secure the launcher with the other, increasing accuracy and consistency.
+            </p>
+
+            <p>
+                <strong>A set guide rail, independent of the trigger.</strong> Versions 1 and 2 used
+                an “M” shaped piece of paper and cardboard respectively. The elastic was secured at
+                the lower symmetrical point of the M, and was chambered by compressing the shape and
+                stretching the elastic to the other end of the M. Version 3 has an independent
+                chambering and firing mechanism: a lock made of a toothpick, fastened between the two
+                parallel pieces of cardboard, holds the pusher in place while the paper plane is
+                placed freely. To launch, the user unpins the toothpick, which automatically
+                launches the plane without changing the distance between the two guide rails, unlike
+                previous iterations.
+            </p>
+
+            <p>
+                <strong>A cardboard pusher.</strong> In earlier iterations the thin elastic band
+                violently ripped pieces of paper from the plane, increasing drag and reducing the
+                distance flown. In Version 3 the pusher spreads the force from the thin band over a
+                long, large area, since pressure is inversely proportional to area. This had two
+                desired consequences: it stopped the ripping, and it increased accuracy because all
+                parts of the plane accelerated equally and the airframe couldn’t bend.
+            </p>
+
+            <figure class="single">
+                <a href="images/launcher-arrowhead.jpg" target="_blank" rel="noopener">
+                    <img src="images/launcher-arrowhead.jpg"
+                         alt="The paper launcher primed for launch with the Arrowhead paper plane loaded in it"
+                         loading="lazy">
+                </a>
+                <figcaption>The paper launcher, primed for launch with “Arrowhead” loaded within it.</figcaption>
+            </figure>
+        </section>
+
+
+        <!-- REFLECTION -->
+        <section class="section" id="reflection">
+            <h2>What I learned</h2>
+
+            <p>
+                This struggle showed me what aeronautical engineering is actually about. It’s not
+                about the theory, it’s the application, perseverance and ingenuity. As soon as I
+                tried something original, all my problems with the original copied design
+                disappeared.
+            </p>
+        </section>
+
+
+        <!-- VIDEOS -->
+        <section class="section" id="videos">
+            <h2>Videos</h2>
+
+            <div class="video-block">
+                <h3>Suzanne, launched from the launcher</h3>
+
+                <div class="video-frame">
+                    <iframe
+                        src="https://drive.google.com/file/d/1BZ_JRhRgt21pg6mkNkkO6hGiFuJWkhpi/preview"
+                        title="Suzanne being launched from the paper plane launcher"
+                        allow="autoplay; fullscreen"
+                        allowfullscreen
+                        loading="lazy"></iframe>
+                </div>
+
+                <p class="caption">
+                    A video showcasing the launcher being used to launch Suzanne, the 2012 world record
+                    holder for distance flown by a paper aircraft.
+                    <a href="https://drive.google.com/file/d/1BZ_JRhRgt21pg6mkNkkO6hGiFuJWkhpi/view?usp=sharing"
+                       target="_blank" rel="noopener">Open it in Google Drive</a>
+                </p>
+            </div>
+
+            <div class="video-block">
+                <h3>The background video</h3>
+
+                <div class="video-frame">
+                    <video controls preload="none" playsinline>
+                        <source src="video.mp4" type="video/mp4">
+                        Your browser can’t play this video.
+                    </video>
+                </div>
+
+                <p class="caption">
+                    The clip that plays behind the title, with controls.
+                    <a href="video.mp4" target="_blank" rel="noopener">Open the video file on its own</a>
+                </p>
+            </div>
+        </section>
+
+
+        <footer class="footer">
+            <a href="#top">Back to top</a>
+        </footer>
+
+    </div>
 
 </body>
 </html>
